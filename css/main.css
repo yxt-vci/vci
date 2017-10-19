@@ -408,4 +408,6 @@ button.btn-small{
     padding: 3px 6px;
     font-size: 12px;
 }
-
+.border-top-ddd{
+    border-top: solid 1px #ddd;
+}

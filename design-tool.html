@@ -12,6 +12,7 @@
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.ferro.ferroMenu-1.2.3.min.js"></script>
     <script type="text/javascript" src="lib/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 </head>
 <body>
 <div>
@@ -147,15 +148,17 @@
                 <i class="fa fa-exclamation-circle often-tool" aria-hidden="true"></i>
                 <span class="ml16 font16">常用软件</span>
             </div>
-            <div class="fl toolList">
-                <img src="images/revit.png" class="tool-logo-wh" alt=""/>
-                <div>Revit</div>
+            <div class="fl drop-box">
+                <div class="fl toolList">
+                    <img src="images/revit.png" class="tool-logo-wh" alt=""/>
+                    <div class="tool-name">Revit</div>
+                </div>
+                <div class="fl toolList">
+                    <img src="images/cad.png" class="tool-logo-wh" alt=""/>
+                    <div class="tool-name">CAD</div>
+                </div>
             </div>
-            <div class="fl toolList">
-                <img src="images/cad.png" class="tool-logo-wh" alt=""/>
-                <div>CAD</div>
-            </div>
-            <div class="fl toolList">
+            <div class="fl toolList toolAdd">
                 <i class="fa fa-plus" aria-hidden="true"></i>
                 <div>添加</div>
             </div>
@@ -163,154 +166,189 @@
         <div class="clear mt14 ml40">
             <div class="fl border-ddd w220 mfr1">
                 <div class="tool-box-list">通用</div>
-                <div class="clear font12">
-                    <div class="fl left-tool-box">
-                        <img src="images/revit.png" class="left-tool-logo" alt=""/>
-                        <div class="mb20">软件名称</div>
-                    </div>
-                    <div class="fl">
-                        <div class="mt">
-                            <span>版本号:</span>
+                <div class="tool-box">
+                    <div class="clear  box-list">
+                        <div class="fl left-tool-box">
+                            <div class="drap">
+                                <img src="images/revit.png" class="left-tool-logo" alt=""/>
+                                <div class="mb20">软件名称</div>
+                            </div>
+
                         </div>
-                        <div class="tool-right-color mt">
-                            <i class="fa fa-download" aria-hidden="true">&nbsp;</i>
-                            <a href="#">下载</a>
-                        </div>
-                        <div class="tool-right-color mt">
-                            <i class="fa fa-info-circle" aria-hidden="true">&nbsp;</i>
-                            <a href="#">介绍</a>
+                        <div class="fl">
+                            <div class="mt">
+                                <span>版本号:</span>
+                            </div>
+                            <div class="tool-right-color mt">
+                                <i class="fa fa-download" aria-hidden="true">&nbsp;&nbsp;</i>
+                                <a href="#">下载</a>
+                            </div>
+                            <div class="tool-right-color mt">
+                                <i class="fa fa-info-circle" aria-hidden="true">&nbsp;&nbsp;</i>
+                                <a href="#">介绍</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="fl border-ddd w220 mfr1">
                 <div class="tool-box-list">建筑</div>
-                <div class="clear font12">
-                    <div class="fl left-tool-box">
-                        <img src="images/revit.png" class="left-tool-logo" alt=""/>
-                        <div class="mb20">软件名称</div>
-                    </div>
-                    <div class="fl">
-                        <div class="mt">
-                            <span>版本号:</span>
+                <div class="tool-box">
+                    <div class="clear  box-list">
+                        <div class="fl left-tool-box">
+                            <div class="drap">
+                                <img src="images/revit.png" class="left-tool-logo" alt=""/>
+                                <div class="mb20">软件名称</div>
+                            </div>
+
                         </div>
-                        <div class="tool-right-color mt">
-                            <i class="fa fa-download" aria-hidden="true">&nbsp;</i>
-                            <a href="#">下载</a>
-                        </div>
-                        <div class="tool-right-color mt">
-                            <i class="fa fa-info-circle" aria-hidden="true">&nbsp;</i>
-                            <a href="#">介绍</a>
+                        <div class="fl">
+                            <div class="mt">
+                                <span>版本号:</span>
+                            </div>
+                            <div class="tool-right-color mt">
+                                <i class="fa fa-download" aria-hidden="true">&nbsp;&nbsp;</i>
+                                <a href="#">下载</a>
+                            </div>
+                            <div class="tool-right-color mt">
+                                <i class="fa fa-info-circle" aria-hidden="true">&nbsp;&nbsp;</i>
+                                <a href="#">介绍</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="fl border-ddd w220 mfr1">
                 <div class="tool-box-list">结构</div>
-                <div class="clear font12">
-                    <div class="fl left-tool-box">
-                        <img src="images/revit.png" class="left-tool-logo" alt=""/>
-                        <div class="mb20">软件名称</div>
-                    </div>
-                    <div class="fl">
-                        <div class="mt">
-                            <span>版本号:</span>
+                <div class="tool-box">
+                    <div class="clear  box-list">
+                        <div class="fl left-tool-box">
+                            <div class="drap">
+                                <img src="images/revit.png" class="left-tool-logo" alt=""/>
+                                <div class="mb20">软件名称</div>
+                            </div>
+
                         </div>
-                        <div class="tool-right-color mt">
-                            <i class="fa fa-download" aria-hidden="true">&nbsp;</i>
-                            <a href="#">下载</a>
-                        </div>
-                        <div class="tool-right-color mt">
-                            <i class="fa fa-info-circle" aria-hidden="true">&nbsp;</i>
-                            <a href="#">介绍</a>
+                        <div class="fl">
+                            <div class="mt">
+                                <span>版本号:</span>
+                            </div>
+                            <div class="tool-right-color mt">
+                                <i class="fa fa-download" aria-hidden="true">&nbsp;&nbsp;</i>
+                                <a href="#">下载</a>
+                            </div>
+                            <div class="tool-right-color mt">
+                                <i class="fa fa-info-circle" aria-hidden="true">&nbsp;&nbsp;</i>
+                                <a href="#">介绍</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="fl border-ddd w220 mfr1">
                 <div class="tool-box-list">给排水</div>
-                <div class="clear font12">
-                    <div class="fl left-tool-box">
-                        <img src="images/revit.png" class="left-tool-logo" alt=""/>
-                        <div class="mb20">软件名称</div>
-                    </div>
-                    <div class="fl">
-                        <div class="mt">
-                            <span>版本号:</span>
+                <div class="tool-box">
+                    <div class="clear  box-list">
+                        <div class="fl left-tool-box">
+                            <div class="drap">
+                                <img src="images/revit.png" class="left-tool-logo" alt=""/>
+                                <div class="mb20">软件名称</div>
+                            </div>
+
                         </div>
-                        <div class="tool-right-color mt">
-                            <i class="fa fa-download" aria-hidden="true">&nbsp;</i>
-                            <a href="#">下载</a>
-                        </div>
-                        <div class="tool-right-color mt">
-                            <i class="fa fa-info-circle" aria-hidden="true">&nbsp;</i>
-                            <a href="#">介绍</a>
+                        <div class="fl">
+                            <div class="mt">
+                                <span>版本号:</span>
+                            </div>
+                            <div class="tool-right-color mt">
+                                <i class="fa fa-download" aria-hidden="true">&nbsp;&nbsp;</i>
+                                <a href="#">下载</a>
+                            </div>
+                            <div class="tool-right-color mt">
+                                <i class="fa fa-info-circle" aria-hidden="true">&nbsp;&nbsp;</i>
+                                <a href="#">介绍</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="fl border-ddd w220 mfr1">
                 <div class="tool-box-list">暖气</div>
-                <div class="clear font12">
-                    <div class="fl left-tool-box">
-                        <img src="images/revit.png" class="left-tool-logo" alt=""/>
-                        <div class="mb20">软件名称</div>
-                    </div>
-                    <div class="fl">
-                        <div class="mt">
-                            <span>版本号:</span>
+                <div class="tool-box">
+                    <div class="clear  box-list">
+                        <div class="fl left-tool-box">
+                            <div class="drap">
+                                <img src="images/revit.png" class="left-tool-logo" alt=""/>
+                                <div class="mb20">软件名称</div>
+                            </div>
+
                         </div>
-                        <div class="tool-right-color mt">
-                            <i class="fa fa-download" aria-hidden="true">&nbsp;</i>
-                            <a href="#">下载</a>
-                        </div>
-                        <div class="tool-right-color mt">
-                            <i class="fa fa-info-circle" aria-hidden="true">&nbsp;</i>
-                            <a href="#">介绍</a>
+                        <div class="fl">
+                            <div class="mt">
+                                <span>版本号:</span>
+                            </div>
+                            <div class="tool-right-color mt">
+                                <i class="fa fa-download" aria-hidden="true">&nbsp;&nbsp;</i>
+                                <a href="#">下载</a>
+                            </div>
+                            <div class="tool-right-color mt">
+                                <i class="fa fa-info-circle" aria-hidden="true">&nbsp;&nbsp;</i>
+                                <a href="#">介绍</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="fl border-ddd w220 mfr1">
                 <div class="tool-box-list">电气</div>
-                <div class="clear font12">
-                    <div class="fl left-tool-box">
-                        <img src="images/revit.png" class="left-tool-logo" alt=""/>
-                        <div class="mb20">软件名称</div>
-                    </div>
-                    <div class="fl">
-                        <div class="mt">
-                            <span>版本号:</span>
+                <div class="tool-box">
+                    <div class="clear  box-list">
+                        <div class="fl left-tool-box">
+                            <div class="drap">
+                                <img src="images/revit.png" class="left-tool-logo" alt=""/>
+                                <div class="mb20">软件名称</div>
+                            </div>
+
                         </div>
-                        <div class="tool-right-color mt">
-                            <i class="fa fa-download" aria-hidden="true">&nbsp;</i>
-                            <a href="#">下载</a>
-                        </div>
-                        <div class="tool-right-color mt">
-                            <i class="fa fa-info-circle" aria-hidden="true">&nbsp;</i>
-                            <a href="#">介绍</a>
+                        <div class="fl">
+                            <div class="mt">
+                                <span>版本号:</span>
+                            </div>
+                            <div class="tool-right-color mt">
+                                <i class="fa fa-download" aria-hidden="true">&nbsp;&nbsp;</i>
+                                <a href="#">下载</a>
+                            </div>
+                            <div class="tool-right-color mt">
+                                <i class="fa fa-info-circle" aria-hidden="true">&nbsp;&nbsp;</i>
+                                <a href="#">介绍</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="fl border-ddd w220 mfr1">
-                <div class="tool-box-list">IBM</div>
-                <div class="clear font12">
-                    <div class="fl left-tool-box">
-                        <img src="images/revit.png" class="left-tool-logo" alt=""/>
-                        <div class="mb20">软件名称</div>
-                    </div>
-                    <div class="fl">
-                        <div class="mt">
-                            <span>版本号:</span>
+                <div class="tool-box-list">BIM</div>
+                <div class="tool-box">
+                    <div class="clear  box-list">
+                        <div class="fl left-tool-box">
+                            <div class="drap">
+                                <img src="images/revit.png" class="left-tool-logo" alt=""/>
+                                <div class="mb20">软件名称</div>
+                            </div>
+
                         </div>
-                        <div class="tool-right-color mt">
-                            <i class="fa fa-download" aria-hidden="true">&nbsp;</i>
-                            <a href="#">下载</a>
-                        </div>
-                        <div class="tool-right-color mt">
-                            <i class="fa fa-info-circle" aria-hidden="true">&nbsp;</i>
-                            <a href="#">介绍</a>
+                        <div class="fl">
+                            <div class="mt">
+                                <span>版本号:</span>
+                            </div>
+                            <div class="tool-right-color mt">
+                                <i class="fa fa-download" aria-hidden="true">&nbsp;&nbsp;</i>
+                                <a href="#">下载</a>
+                            </div>
+                            <div class="tool-right-color mt">
+                                <i class="fa fa-info-circle" aria-hidden="true">&nbsp;&nbsp;</i>
+                                <a href="#">介绍</a>
+                            </div>
                         </div>
                     </div>
                 </div>
