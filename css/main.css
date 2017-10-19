@@ -1,0 +1,399 @@
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.pa{
+    position: absolute;
+}
+.pr{
+    position: relative;
+}
+.mt20{
+    margin-top: 20px;
+}
+.ml4{
+    margin-left: 4px;
+}
+.ml10{
+    margin-left: 10px;
+}
+.ml16{
+    margin-left: 16px;
+}
+.ml20{
+    margin-left: 20px;
+}
+.ml40{
+    margin-left: 40px;
+}
+.mr20{
+    margin-right: 20px;
+}
+.mr40{
+    margin-right: 40px;
+}
+.mb14{
+    margin-bottom: 14px;
+}
+.mbf48{
+    margin-bottom: -48px;
+}
+.clear {
+    zoom:1; /*==for IE6/7 Maxthon2==*/
+}
+.clear:after {/*==for FF/chrome/opera/IE8==*/
+    clear:both;
+    content:'.';
+    display:block;
+    width: 0;
+    height: 0;
+    visibility:hidden;
+}
+.font12{
+    font-size: 12px;
+}
+.ofw-hidden{
+    overflow: hidden;
+}
+.tip{
+    font-size: 12px;
+    line-height: 12px;
+    padding: 1px 5px;
+    position: absolute;
+    right: 5px;
+    top: 9px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 3px;
+}
+.tip-primary{
+    background-color: #1ab394;
+    color: #FFF;
+}
+.tip-warn{
+    background-color: #f8ac59;
+    color: #FFF;
+}
+.block{
+    display: block;
+}
+.hide{
+    display: none;
+}
+ul.fl>li{
+    float: left;
+}
+.header{
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    background: #F3F3F4;
+}
+.header .logo-en{
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 宋体,'SimSun';
+    color: #4B6477;
+    margin-left: 32px;
+}
+.header .logo-ch{
+    font-size: 24px;
+    color: #4B6477;
+    margin-left: 16px;
+}
+.header .a-tip{
+    display: block;
+    padding: 0 13px;
+    color: #999c9e;
+}
+.header .a-tip .fa{
+    font-size: 17px;
+}
+.footer{
+    z-index: 100;
+    position: fixed;
+    bottom: 0;
+    background: #34495E;
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: #fff;
+}
+.header .message-box {
+    position:absolute;
+    left: -275px;
+    width:330px;
+    line-height: normal;
+    font-size: 12px;
+    background:#fff;
+    box-shadow:1px 2px 3px #ccc;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+.triangle{
+    position: absolute;
+    top: 0;
+    left: 252px;
+}
+.triangle-character {
+    position:absolute;
+    left:30px;
+    overflow:hidden;
+    width:26px;
+    height:26px;
+    font:normal 26px "宋体"; // 字符的大小和字体也有关系哦！
+}
+.tc-border {
+    top:-15px;
+    color:#ccc;
+}
+.tc-background {
+    top:-14px;
+    color:#fff;
+}
+.header .box-tit{
+    margin-left: 14px;
+    height: 43px;
+    line-height: 44px;
+}
+.align-center{
+    text-align: center;
+}
+.col_blue{
+    color: #108DE9;
+}
+.header .box-ul{
+    font-size: 14px;
+}
+.box-ul li>.li-div{
+    margin-left: 14px;
+    margin-right: 14px;
+    padding: 14px 0;
+}
+.box-div-bot{
+    padding: 14px 0;
+}
+.box-ul li,.box-div-bot{
+    border-top: solid 1px #ccc;
+}
+.header .point{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+.bg-97{
+    background: #979797;
+}
+.col-97{
+    color: #979797;
+}
+.bg-red{
+    background: #ED6B75;
+}
+.col-red{
+    color: #ED6B75;
+}
+.header .mask-descrtion{
+    line-height: 34px;
+    height: 34px;
+    color: #999;
+    margin-left: 16px;
+}
+.header .progress-change{
+    height: 10px;
+    line-height: 10px;
+    width: 80%;
+    margin-bottom: 0;
+}
+.heg10{
+    height: 10px;
+    line-height: 10px;
+}
+.wb80{
+   width: 80%;
+}
+.bg-gr{
+    background: #1AB394;
+}
+.header .progress-num{
+    right: 0;
+    top: -5px;
+}
+.mg-lrb9{
+    margin: 0 9%;
+}
+.font-bold{
+    font-weight: 700;
+}
+.header .avatar{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+.header .mask-descrtion2{
+    margin-left: 40px;
+    line-height: 21px;
+    height: auto;
+    color: #999;
+}
+.header .box-ul li:hover{
+    background: #f5f5f5;
+}
+.content{
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+a:hover{
+    text-decoration: none;
+}
+.tree-box{
+    width: 245px;
+    max-height: 530px;
+    overflow: auto;
+    border: solid 1px #ddd;
+    margin-left: 40px;
+}
+.tree-tit{
+    text-indent: 9px;
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+    background: #fbf7f7;
+}
+.ipt{
+    margin-left: 12px;
+    display: inline-block;
+    width: 220px;
+    height: 30px;
+}
+.wb68{
+    width: 68%;
+}
+.border-ddd{
+    border: solid 1px #ddd;
+}
+.table-box{
+    width: 98%;
+    margin: 14px auto;
+}
+button.btn{
+    padding: 4px 12px;
+}
+.btn-tip {
+    color: #fff;
+    background-color: #FC8F00;
+    border-color: #E86E01;
+}
+.btn-tip:hover {
+    color: #fff;
+    background-color: #E86E01;
+    border-color: #E86E01;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.popup0 {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none
+}
+
+.popup0 .popup_zone {
+    position: absolute;
+    width: 430px;
+    height: auto;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.popup0 .popup_zone p span {
+    display: inline-block;
+    width: 90px;
+}
+
+.popup0 .popup_zone input {
+    line-height: 30px;
+    text-indent: 10px;
+    border: 1px solid #eee;
+    width: 210px;
+}
+
+.popup0 .popup_zone input[type="button"] {
+    text-align: center;
+    text-indent: 0;
+    width: 80px;
+    margin-left: 20px;
+}
+
+.popup0 .popup_zone select {
+    height: 30px;
+    text-indent: 2px;
+    border: 1px solid #eee;
+    width: 280px;
+}
+
+.popup0 .popup_zone .decide_box button {
+    display: inline-block;
+    width: 80px;
+    line-height: 28px;
+    margin-right: 10px;
+    color: #fff;
+    background: #2185dd;
+    text-align: center;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.popup0 i.close_popup {
+    margin-top: 12px;
+    margin-right: 14px;
+    float: right;
+    font-size: 17px;
+}
+.font16{
+    font-size: 16px;
+}
+.popup0 .popup-head{
+    height: 44px;
+    line-height: 44px;
+    text-indent: 14px;
+    border-bottom: solid 1px #999;
+}
+.popup-content{
+    font-size: 14px;
+    margin-left: 14px;
+    margin-top: 14px;
+}
+.ipt-label{
+    width: 100px;
+    text-align: right;
+}
+p {
+    margin: 0 0 14px;
+}
+button.btn-small{
+    padding: 3px 6px;
+    font-size: 12px;
+}
+

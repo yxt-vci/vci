@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="lib/zTree_v3.5.29/css/zTreeStyle/zTreeStyle.css" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="lib/zTree_v3.5.29/js/jquery.ztree.core.js"></script>
+</head>
+<body>
+<ul id="treeDemo" class="ztree"></ul>
+<div id="table">
+    这里面是table
+</div>
+<script type="text/javascript">
+
+    var setting = {
+        /*异步加载数据*/
+      /*  async: {
+            enable: true,
+            url:"../asyncData/getNodes.php",
+            autoParam:["id", "name=n", "level=lv"],
+            otherParam:{"otherParam":"zTreeAsyncTest"},
+            dataFilter: filter
+        },*/
+        view: {
+            showLine: true
+        },
+        data: {
+            simpleData: {
+                enable: true
+            }
+        },
+        callback: {
+            beforeClick: beforeClick,
+            onClick: onClick
+        }
+    };
+    function beforeClick(treeId, treeNode){
+        if(treeNode.isParent){
+            return false
+        }
+    }
+    function onClick(event, treeId, treeNode, clickFlag) {
+        console.log(treeNode)
+       $("#table").html(122)
+    }
+    var zNodes =[
+        { id:1, pId:0, name:"展开、折叠 自定义图标不同", open:true,iconOpen:"./lib/zTree_v3.5.29/css/zTreeStyle/img/diy/open-folder.png", iconClose:"./lib/zTree_v3.5.29/css/zTreeStyle/img/diy/close-folder.png"},
+        { id:11, pId:1, name:"叶子节点1",icon:"./lib/zTree_v3.5.29/css/zTreeStyle/img/diy/file.png"},
+        { id:12, pId:1, name:"叶子节点2",icon:"./lib/zTree_v3.5.29/css/zTreeStyle/img/diy/file.png" },
+        { id:13, pId:1, name:"叶子节点3",icon:"./lib/zTree_v3.5.29/css/zTreeStyle/img/diy/file.png"},
+        { id:2, pId:0, name:"展开、折叠 自定义图标相同", open:true,iconOpen:"./lib/zTree_v3.5.29/css/zTreeStyle/img/diy/open-folder.png", iconClose:"./lib/zTree_v3.5.29/css/zTreeStyle/img/diy/close-folder.png"},
+        { id:21, pId:2, name:"叶子节点1",icon:"./lib/zTree_v3.5.29/css/zTreeStyle/img/diy/file.png"},
+        { id:22, pId:2, name:"叶子节点2",icon:"./lib/zTree_v3.5.29/css/zTreeStyle/img/diy/file.png"},
+        { id:23, pId:2, name:"叶子节点3",icon:"./lib/zTree_v3.5.29/css/zTreeStyle/img/diy/file.png"},
+        { id:3, pId:0, name:"不使用自定义图标", open:false,iconOpen:"./lib/zTree_v3.5.29/css/zTreeStyle/img/diy/open-folder.png", iconClose:"./lib/zTree_v3.5.29/css/zTreeStyle/img/diy/close-folder.png" },
+        { id:31, pId:3, name:"叶子节点1",icon:"./lib/zTree_v3.5.29/css/zTreeStyle/img/diy/file.png"},
+        { id:32, pId:3, name:"叶子节点2",icon:"./lib/zTree_v3.5.29/css/zTreeStyle/img/diy/file.png"},
+        { id:33, pId:3, name:"叶子节点3",icon:"./lib/zTree_v3.5.29/css/zTreeStyle/img/diy/file.png"}
+    ];
+    $(function(){
+        $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+    })
+</script>
+</body>
+</html>

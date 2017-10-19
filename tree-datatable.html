@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="lib/zTree_v3.5.29/css/zTreeStyle/zTreeStyle.css" type="text/css">
+    <!--<link rel="stylesheet" href="lib/dataTable-1.10.13/css/jquery.dataTables.min.css"/>-->
+    <link rel="stylesheet" href="lib/dataTable-1.10.13/css/bootstrap-responsiv.css"/>
+    <link rel="stylesheet" href="lib/dataTable-1.10.13/css/dataTables.bootstra.css"/>
+    <link rel="stylesheet" href="lib/dataTable-1.10.13/css/vince.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/lib/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/nav-child.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ferro.ferroMenu-1.2.3.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/zTree_v3.5.29/js/jquery.ztree.core.js"></script>
+    <script type="text/javascript" src="lib/dataTable-1.10.13/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="lib/dataTable-1.10.13/js/dataTables.bootstrap.js"></script>
+</head>
+<body>
+<div>
+    <!-- 头部信息内容-->
+    <div class="header clear">
+        <div class="fl">
+            <span class="logo-en fl">BIAD</span>
+            <span class="logo-ch fl">协同设计管理平台</span>
+        </div>
+        <div class="fr mr40">
+            <div class="fl">
+                <span>当前时间：</span>
+                <span>2016-4-25</span>
+                <span>10:09:08</span>
+            </div>
+            <div class="fl ml40">
+                <span>张三</span>
+                <span class="ml20">项目经理</span>
+            </div>
+            <ul class="fl ml40">
+                <li>
+                    <a class="pr a-tip">
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="pr ml10 dropdown">
+                    <a class="pr a-tip dropdown-toggle" href="#" data-toggle="dropdown">
+                        <i class="fa fa-bell-o" aria-hidden="true"></i>
+                        <span class="tip tip-primary">5</span>
+                    </a>
+                    <!--工作任务浮窗-->
+                    <div class="dropdown-menu message-box ">
+                        <div class="box-tit">工作任务</div>
+                        <ul class="ofw-hidden box-ul">
+                            <li>
+                                <div class="li-div">
+                                    <div>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span>卫生间设计任务</span>
+
+                                        <div class="fr">
+                                            <div class="point bg-97"></div>
+                                            <span class="col-97">待接收</span>
+                                        </div>
+                                    </div>
+                                    <div class="mask-descrtion">
+                                        任务描述
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-div">
+                                    <div>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span>提交初步设计客户资料</span>
+
+                                        <div class="fr">
+                                            <div class="point bg-red"></div>
+                                            <span class="col-red">马上到期</span>
+                                        </div>
+                                    </div>
+                                    <div class="mask-descrtion">
+                                        任务描述
+                                    </div>
+                                    <div class="pr">
+                                        <div class="progress progress-change">
+                                            <div class="progress-bar heg10 bg-gr" role="progressbar" aria-valuenow="60"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                            </div>
+                                        </div>
+                                        <span class="pa progress-num">60%</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="box-div-bot align-center">
+                            <a class="col_blue" href="#">查看全部任务</a>
+                            <a class="col_blue mg-lrb9" href="#">查看全部审核</a>
+                            <a class="col_blue" href="#">查看全部项目</a>
+                        </div>
+                        <div class="triangle">
+                            <div class="triangle-character tc-border">◆</div>
+                            <div class="triangle-character tc-background">◆</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="ml10 dropdown">
+                    <a class="pr a-tip dropdown-toggle" href="#" data-toggle="dropdown">
+                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                        <span class="tip tip-warn">5</span>
+                    </a>
+                    <!--消息浮窗-->
+                    <div class="dropdown-menu message-box" >
+                        <div class="box-tit">
+                            <span class="font-bold">消息（3条未读）</span>
+                            <a class="col_blue fr mr20" href="#">全部标记已读</a>
+                        </div>
+                        <ul class="clear box-ul">
+                            <li>
+                                <div class="li-div">
+                                    <div>
+                                        <img class="avatar" src="images/avatar.jpg" alt=""/>
+                                        <label class="ml4">王辉</label>
+                                        <small class="fr">1分钟前</small>
+                                    </div>
+                                    <div class="mask-descrtion2">
+                                        任务描述
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="box-div-bot align-center">
+                            <a class="col_blue" href="#">查看全部消息</a>
+                        </div>
+                        <div class="triangle">
+                            <div class="triangle-character tc-border">◆</div>
+                            <div class="triangle-character tc-background">◆</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="ml10">
+                    <a class="pr a-tip">
+                        <i class="fa fa-power-off" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--内容主体-->
+    <div class="content clear">
+        <div class="fl tree-box">
+            <div class="tree-tit">
+                任务结构树
+            </div>
+            <ul id="treeDemo" class="ztree"></ul>
+        </div>
+        <div class="fl wb68 ml20 border-ddd">
+            <div class="tree-tit">详细内容</div>
+            <div class="table-box">
+                <div class="mbf48">
+                    <button type="button" class="btn btn-w-m btn-tip" id="addRow">增加</button>
+                    <button type="button" class="btn btn-w-m btn-tip ml40" id="remove">删除</button>
+                </div>
+                <table id="table1" class="table-striped" width="100%" cellspacing="0">
+                   <!-- <thead>
+                    <tr>
+                        <th></th>
+                        <th>名称</th>
+                        <th>职位</th>
+                        <th>状态</th>
+                        <th>数量</th>
+                        <th>发布时间</th>
+                        <th>资金</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>-->
+                </table>
+            </div>
+        </div>
+       <!-- <div>表单</div>
+        <form action="">
+            <label for="name">项目名称</label>
+            <input type="text" class="form-control ipt" id="name" placeholder="请输入项目名称"/>
+        </form>-->
+
+    </div>
+    <!--底部信息-->
+    <div class="footer">
+        <span>Copyright © www.www.vci-tech.com.com, All Rights Reserved.</span>
+    </div>
+</div>
+<div class="popup0" id="popup0">
+    <div class="popup_zone">
+        <div class="popup-head">
+            <span class="font16">表格内容</span>
+            <i class="fa fa-times close_popup close" aria-hidden="true"></i>
+        </div>
+        <div class="popup-content">
+            <form class="popup-content-form"></form>
+        </div>
+        <div class="align-center mb14">
+            <button type="button" class="btn btn-w-m btn-tip save">保存</button>
+            <button type="button" class="btn btn-w-m btn-tip ml40 cancle">取消</button>
+        </div>
+    </div>
+</div>
+<!-- 子导航-->
+<ul id="nav">
+    <li><a href="javascript:void(0);"><i class="fa fa-home"></i></a></li>
+    <li><a href="javascript:void(0);"><i class="fa fa-comment"></i></a></li>
+    <li><a href="javascript:void(0);"><i class="fa fa-play"></i></a></li>
+    <li><a href="javascript:void(0);"><i class="fa fa-camera"></i></a></li>
+    <li><a href="javascript:void(0);"><i class="fa fa-music"></i></a></li>
+    <li><a href="javascript:void(0);"><i class="fa fa-home"></i></a></li>
+    <li><a href="javascript:void(0);"><i class="fa fa-comment"></i></a></li>
+</ul>
+<!--自定义的js文件-->
+<script type="text/javascript" src="js/nav-child.js"></script>
+<script type="text/javascript" src="js/tree-dataTable.js"></script>
+</body>
+</html>

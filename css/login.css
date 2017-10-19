@@ -1,0 +1,76 @@
+body{
+    background: url("../images/login-bg.png");
+}
+.fl{
+    float: left;
+}
+.pa{
+    position: absolute;
+}
+.pr{
+    position: relative;
+}
+.mt16{
+    margin-top: 16px;
+}
+.mt25{
+    margin-top: 25px;
+}
+.middle-box{
+    margin: 200px auto;
+    width: 332px;
+}
+.login-en{
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 宋体,'SimSun';
+    color: #fff;
+}
+.login-ch{
+    font-size: 24px;
+    color: #fff;
+    margin-left: 16px;
+}
+.login-logo-box{
+    line-height: 50px;
+}
+.clear {
+    zoom:1; /*==for IE6/7 Maxthon2==*/
+}
+.clear:after {/*==for FF/chrome/opera/IE8==*/
+    clear:both;
+    content:'.';
+    display:block;
+    width: 0;
+    height: 0;
+    visibility:hidden;
+}
+.ipt{
+    width: 260px;
+    height: 20px;
+    padding: 6px 12px;
+    text-indent: 18px;
+    outline: none;
+    border: solid 1px #ccc;
+    border-radius: 4px;
+}
+.icon-pa{
+    color: #ccc;
+    margin: 11px 2px 4px 10px;
+    z-index: 3;
+    width: 16px;
+    font-size: 16px;
+    text-align: center;
+    left: 0;
+}
+.btn{
+    width: 287px;
+    height: 34px;
+    line-height: 34px;
+    border: solid 1px #2292c7;
+    background: #0a77ab;
+    color: #fff;
+    border-radius: 3px;
+
+}
+
