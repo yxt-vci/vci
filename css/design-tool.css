@@ -1,5 +1,57 @@
 .common-box{
-    height: 60px;
+    height: 66px;
     background-color: #d9edf7;
     border:solid 1px #bce8f1;
+}
+.often-tool{
+    color: #0E7ECE;
+    font-size: 18px;
+}
+.toolList{
+    width: 56px;
+    height: 50px;
+    margin-top: 7px;
+    margin-left: 16px;
+    text-align: center;
+    border: solid 1px #378dbd;
+    line-height: 24px;
+}
+.tool-logo-wh{
+    width: 18px;
+    height: 18px;
+}
+.tool-box-list{
+    text-align: center;
+    width: 100%;
+    background: #eee;
+    height: 40px;
+    line-height: 40px;
+}
+.line-heg64{
+    line-height: 64px;
+}
+.w220{
+    width: 220px;
+}
+.left-tool-box{
+    border-right: solid 1px #ddd;
+    width: 50%;
+    text-align: center;
+}
+.left-tool-logo{
+    margin-top: 20px;
+    margin-bottom: 12px;
+    width: 18px;
+    height: 18px;
+}
+
+.tool-right-color {
+    color: #24A3DA
+}
+.mfr1{
+    margin-right: -1px;
+}
+.mt{
+    margin-top: 9px;
+    margin-left: 10px;
 }

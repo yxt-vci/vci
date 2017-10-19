@@ -11,6 +11,9 @@
 .pr{
     position: relative;
 }
+.mt14{
+    margin-top: 14px;
+}
 .mt20{
     margin-top: 20px;
 }
@@ -35,11 +38,20 @@
 .mr40{
     margin-right: 40px;
 }
+.mb12{
+    margin-bottom: 12px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
 .mb14{
     margin-bottom: 14px;
 }
 .mbf48{
     margin-bottom: -48px;
+}
+.pl35{
+    padding-left: 35px;
 }
 .clear {
     zoom:1; /*==for IE6/7 Maxthon2==*/
@@ -257,7 +269,7 @@ a:hover{
     max-height: 530px;
     overflow: auto;
     border: solid 1px #ddd;
-    margin-left: 40px;
+    margin-left: 35px;
 }
 .tree-tit{
     text-indent: 9px;
