@@ -411,3 +411,10 @@ button.btn-small{
 .border-top-ddd{
     border-top: solid 1px #ddd;
 }
+.custom-header{
+    background: #2A679C;
+    color: #fff;
+    text-indent: 12px;
+    line-height: 30px;
+    height: 30px;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>jquery-multi-select</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/lib/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/nav-child.css"/>
+    <!--jquery-multi-select需要的样式文件begin-->
+    <link rel="stylesheet" href="lib/jquery-multi-select/css/multi-select.css"/>
+    <link rel="stylesheet" href="lib/jquery-multi-select/css/bootstrap-select.min.css"/>
+
+    <link rel="stylesheet" href="lib/select2-4.0.3/css/select2.min.css"/>
+    <link rel="stylesheet" href="lib/select2-4.0.3/css/select2-bootstrap.min.css"/>
+    <link rel="stylesheet" href="lib/select2-4.0.3/css/plugins.min.css"/>
+    <!--end-->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ferro.ferroMenu-1.2.3.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <!--jquery-multi-select需要的js文件begin-->
+    <script type="text/javascript" src="lib/jquery-multi-select/js/jquery.multi-select.js"></script>
+    <script type="text/javascript" src="lib/select2-4.0.3/js/select2.min.js"></script>
+    <!--end-->
+</head>
+<body>
+<div>
+    <!-- 头部信息内容-->
+    <div class="header clear">
+        <div class="fl">
+            <span class="logo-en fl">BIAD</span>
+            <span class="logo-ch fl">协同设计管理平台</span>
+        </div>
+        <div class="fr mr40">
+            <div class="fl">
+                <span>当前时间：</span>
+                <span>2016-4-25</span>
+                <span>10:09:08</span>
+            </div>
+            <div class="fl ml40">
+                <span>张三</span>
+                <span class="ml20">项目经理</span>
+            </div>
+            <ul class="fl ml40">
+                <li>
+                    <a class="pr a-tip">
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="pr ml10 dropdown">
+                    <a class="pr a-tip dropdown-toggle" href="#" data-toggle="dropdown">
+                        <i class="fa fa-bell-o" aria-hidden="true"></i>
+                        <span class="tip tip-primary">5</span>
+                    </a>
+                    <!--工作任务浮窗-->
+                    <div class="dropdown-menu message-box ">
+                        <div class="box-tit">工作任务</div>
+                        <ul class="ofw-hidden box-ul">
+                            <li>
+                                <div class="li-div">
+                                    <div>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span>卫生间设计任务</span>
+
+                                        <div class="fr">
+                                            <div class="point bg-97"></div>
+                                            <span class="col-97">待接收</span>
+                                        </div>
+                                    </div>
+                                    <div class="mask-descrtion">
+                                        任务描述
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-div">
+                                    <div>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span>提交初步设计客户资料</span>
+
+                                        <div class="fr">
+                                            <div class="point bg-red"></div>
+                                            <span class="col-red">马上到期</span>
+                                        </div>
+                                    </div>
+                                    <div class="mask-descrtion">
+                                        任务描述
+                                    </div>
+                                    <div class="pr">
+                                        <div class="progress progress-change">
+                                            <div class="progress-bar heg10 bg-gr" role="progressbar" aria-valuenow="60"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                            </div>
+                                        </div>
+                                        <span class="pa progress-num">60%</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="box-div-bot align-center">
+                            <a class="col_blue" href="#">查看全部任务</a>
+                            <a class="col_blue mg-lrb9" href="#">查看全部审核</a>
+                            <a class="col_blue" href="#">查看全部项目</a>
+                        </div>
+                        <div class="triangle">
+                            <div class="triangle-character tc-border">◆</div>
+                            <div class="triangle-character tc-background">◆</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="ml10 dropdown">
+                    <a class="pr a-tip dropdown-toggle" href="#" data-toggle="dropdown">
+                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                        <span class="tip tip-warn">5</span>
+                    </a>
+                    <!--消息浮窗-->
+                    <div class="dropdown-menu message-box" >
+                        <div class="box-tit">
+                            <span class="font-bold">消息（3条未读）</span>
+                            <a class="col_blue fr mr20" href="#">全部标记已读</a>
+                        </div>
+                        <ul class="clear box-ul">
+                            <li>
+                                <div class="li-div">
+                                    <div>
+                                        <img class="avatar" src="images/avatar.jpg" alt=""/>
+                                        <label class="ml4">王辉</label>
+                                        <small class="fr">1分钟前</small>
+                                    </div>
+                                    <div class="mask-descrtion2">
+                                        任务描述
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="box-div-bot align-center">
+                            <a class="col_blue" href="#">查看全部消息</a>
+                        </div>
+                        <div class="triangle">
+                            <div class="triangle-character tc-border">◆</div>
+                            <div class="triangle-character tc-background">◆</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="ml10">
+                    <a class="pr a-tip">
+                        <i class="fa fa-power-off" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--内容主体-->
+    <div class="content clear ml40">
+        <div class="form-group">
+            <label class="control-label col-md-3">Default</label>
+            <div class="col-md-9">
+                <select multiple="multiple" class="multi-select" id="my_multi_select1" name="my_multi_select1[]">
+                    <option>Dallas Cowboys</option>
+                    <option>New York Giants</option>
+                    <option selected>Philadelphia Eagles</option>
+                    <option selected>Washington Redskins</option>
+                    <option>Chicago Bears</option>
+                    <option>Detroit Lions</option>
+                    <option>Green Bay Packers</option>
+                    <option>Minnesota Vikings</option>
+                    <option selected>Atlanta Falcons</option>
+                    <option>Carolina Panthers</option>
+                    <option>St. Louis Rams</option>
+                    <option>San Francisco 49ers</option>
+                    <option>Seattle Seahawks</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!--底部信息-->
+    <div class="footer">
+        <span>Copyright © www.www.vci-tech.com.com, All Rights Reserved.</span>
+    </div>
+</div>
+
+<!-- 子导航-->
+<ul id="nav">
+    <li><a href="javascript:void(0);"><i class="fa fa-home"></i></a></li>
+    <li><a href="javascript:void(0);"><i class="fa fa-comment"></i></a></li>
+    <li><a href="javascript:void(0);"><i class="fa fa-play"></i></a></li>
+    <li><a href="javascript:void(0);"><i class="fa fa-camera"></i></a></li>
+    <li><a href="javascript:void(0);"><i class="fa fa-music"></i></a></li>
+    <li><a href="javascript:void(0);"><i class="fa fa-home"></i></a></li>
+    <li><a href="javascript:void(0);"><i class="fa fa-comment"></i></a></li>
+</ul>
+<!--自定义的js文件-->
+<script type="text/javascript" src="js/nav-child.js"></script>
+<!--select2-->
+<script type="text/javascript">
+    $(function () {
+        $('#my_multi_select1').multiSelect({
+            selectableHeader: "<div class='custom-header'>Selectable items</div>",
+            selectionHeader: "<div class='custom-header'>Selection items</div>",
+        });
+    })
+</script>
+</body>
+</html>
